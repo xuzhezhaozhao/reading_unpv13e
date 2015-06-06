@@ -23,6 +23,7 @@ main(int argc, char **argv)
 	for ( ; ; ) {
 		connfd = Accept(listenfd, (SA *) NULL, NULL);
 
+		printf("accept one connection.\n");
         ticks = time(NULL);
         snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
         Write(connfd, buff, strlen(buff));

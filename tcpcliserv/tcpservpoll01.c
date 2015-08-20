@@ -2,6 +2,9 @@
 #include	"unp.h"
 #include	<limits.h>		/* for OPEN_MAX */
 
+/* xzz add */
+#define OPEN_MAX 1024
+
 int
 main(int argc, char **argv)
 {
@@ -12,6 +15,10 @@ main(int argc, char **argv)
 	socklen_t			clilen;
 	struct pollfd		client[OPEN_MAX];
 	struct sockaddr_in	cliaddr, servaddr;
+
+	/* unused */
+	(void)argc;
+	(void)argv;
 
 	listenfd = Socket(AF_INET, SOCK_STREAM, 0);
 

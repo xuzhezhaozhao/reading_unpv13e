@@ -19,8 +19,9 @@ main(int argc, char **argv)
 	if (inet_pton(AF_INET, argv[1], &servaddr.sin_addr) <= 0)
 		err_quit("inet_pton error for %s", argv[1]);
 
-	if (connect(sockfd, (SA *) &servaddr, sizeof(servaddr)) < 0)
+	if (connect(sockfd, (SA *) &servaddr, sizeof(servaddr)) < 0) {
 		err_sys("connect error");
+	}
 
 	int cnt = 0;
 	while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {

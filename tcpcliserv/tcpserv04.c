@@ -9,6 +9,9 @@ main(int argc, char **argv)
 	struct sockaddr_in	cliaddr, servaddr;
 	void				sig_chld(int);
 
+	(void) argc;
+	(void) argv;
+
 	listenfd = Socket(AF_INET, SOCK_STREAM, 0);
 
 	bzero(&servaddr, sizeof(servaddr));

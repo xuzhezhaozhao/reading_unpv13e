@@ -7,6 +7,8 @@ main(int argc, char **argv)
 	pid_t				childpid;
 	socklen_t			clilen;
 	struct sockaddr_in	cliaddr, servaddr;
+	(void) argc;
+	(void) argv;
 
 	listenfd = Socket(AF_INET, SOCK_STREAM, 0);
 

@@ -1,0 +1,3 @@
+-I ../lib
+-D_REENTRANT
+-Wall

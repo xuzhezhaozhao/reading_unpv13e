@@ -1,7 +1,25 @@
 *.[oa]
 *.swp
 tags
-daytimetcpcli daytimetcpcli1 daytimetcpcli2 daytimetcpcli3 \
-		daytimetcpsrv daytimetcpsrv1 daytimetcpsrv2 daytimetcpsrv3 \
-		daytimetcpcliv6 daytimetcpsrvv6 \
-		byteorder
+daytimetcpcli
+daytimetcpcli1
+daytimetcpcli2
+daytimetcpcli3
+daytimetcpsrv
+daytimetcpsrv1
+daytimetcpsrv2
+daytimetcpsrv3
+daytimetcpcliv6
+daytimetcpsrvv6
+byteorder
+core
+core.*
+*.core
+temp.*
+*.out
+typescript*
+*.lc
+*.lh
+*.bsdi
+*.sparc
+*.uw
